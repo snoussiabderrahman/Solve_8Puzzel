@@ -1,4 +1,4 @@
-                        //   solve 8 puzzel    //
+                             //   solve 8 puzzel    //
 
 #include<stdio.h>
 #include<conio.h>
