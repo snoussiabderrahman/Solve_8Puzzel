@@ -97,7 +97,7 @@ int move_to_direction(int array[N][N],int direction){
     }
 }
 //  fill in the table with the possible directions except for the old one
-void Fill_dir_possible(int array[N][N],int tab_dir[4],int pos_empty){
+void fill_dir_possible(int array[N][N],int tab_dir[4],int pos_empty){
     for(int i=0;i<3;i++)
     {
         for(int j=0;j<3;j++)
@@ -155,7 +155,7 @@ tree* create_tree_paths(tree *tr,int array[N][N],int d, int pos_old){
     tree *p ;
     if(d == Depth || tree_empty(tr)) 
       return NULL;
-    Fill_dir_possible(array,tab_direction,pos_old);
+    fill_dir_possible(array,tab_direction,pos_old);
     for(int i=0;i<4;i++)
     {
         if(tab_direction[i] != -1)
